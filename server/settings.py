@@ -25,7 +25,9 @@ SECRET_KEY = 'ojoz!@9&3@(kb5oz6t6mpm#e1nz74p54cwslr87zy_gf2zbmg+'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'angdang.herokuapp.com'
+]
 # CORS_ORIGIN_ALLOW_ALL = True
 # CORS_ALLOW_CREDENTIALS = True
 CORS_ORIGIN_WHITELIST = [
