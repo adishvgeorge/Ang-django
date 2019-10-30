@@ -27,7 +27,7 @@ def fn_reg(req):
                 user_save.save()
                 if user_save.id > 0:
                     return JsonResponse({'status':True,'res':"registration success"})
-        return JsonResponse({'status':False,'res':"user already exists"})       
+        return JsonResponse({'status':False,'res':"user name already exists"})       
     except Exception as i:
         print(i)
         return JsonResponse({'status':False,'res':"registration failed"})
@@ -59,5 +59,7 @@ def fn_userdata(req):
                 'username':i.fk_login.username
             })
     print(userobjects) 
-    return  JsonResponse({'status':True,'res':userobjects})            
+    return  JsonResponse({'status':True,'res':userobjects})  
+
+
 
